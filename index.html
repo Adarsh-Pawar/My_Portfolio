@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adarsh Pawar Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav
+      id="desktop-nav"
+      data-aos="fade-down"
+      data-aos-duration="2000"
+      data-aos-easing="ease-in-out"
+      data-aos-offset="200"
+    >
+      <div>
+        <img src="assets/logo.png" alt="logo" class="logo-img" />
+        <div class="logo">Adarsh Pawar</div>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hamburger -->
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo" class="logo-img" />
+        Adarsh Pawar
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile -->
+
+    <section id="profile">
+      <div class="section">
+        <div
+          class="section__pic-container"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        >
+          <img src="assets/profile.png" alt="profile-pic" />
+        </div>
+        <div
+          class="section__text"
+          data-aos="fade-left"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        >
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Adarsh Pawar</h1>
+          <p class="section__text__p2">Web Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/Adarsh_Pawar.pdf')"
+            >
+              Download CV
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="window.open('https://www.linkedin.com/in/adarsh-pawar-3039ab20b/')"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="window.open('https://github.com/Adarsh-Pawar')"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about">
+      <div class="section">
+        <p
+          class="section__text__p1"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-offset="0"
+        >
+          Get To Know More
+        </p>
+        <h1
+          class="title"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-offset="0"
+        >
+          About Me
+        </h1>
+        <div class="section-container">
+          <div
+            class="section__pic-container"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="500"
+            data-aos-mirror="true"
+          >
+            <img
+              src="assets/about.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div
+                class="details-container"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>1+ years <br />Frontend Development</p>
+              </div>
+              <div
+                class="details-container"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>
+                  Bachelors of Computer Applications<br />Masters of Computer
+                  Applications
+                </p>
+              </div>
+            </div>
+            <div
+              class="text-container"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
+              <p>
+                A passionate web developer with strong enthusiasm for web development
+                and a good grasp of fundamental coding languages. Eager to
+                leverage my educational background, creativity and
+                determination to contribute to dynamic web projects. Excited to
+                learn, collaborate and bring innovative ideas to the forefront
+                of web development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- EXPERIENCE -->
+
+    <section id="experience">
+      <div class="section">
+        <p
+          class="section__text__p1"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+          data-aos-offset="0"
+        >
+          Explore My
+        </p>
+        <h1
+          class="title"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+          data-aos-offset="0"
+        >
+          Skills
+        </h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2
+                class="experience-sub-title"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-offset="0"
+              >
+                Tech Stack
+              </h2>
+              <div class="article-container">
+                <article
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-offset="0"
+                >
+                  <img
+                    src="./assets/html.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <!-- <p>Experienced</p> -->
+                  </div>
+                </article>
+                <article
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-offset="0"
+                >
+                  <img
+                    src="./assets/css.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <!-- <p>Experienced</p> -->
+                  </div>
+                </article>
+                <article
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-offset="0"
+                >
+                  <img
+                    src="./assets/bootstrap.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Bootstrap</h3>
+                    <!-- <p>Intermediate</p> -->
+                  </div>
+                </article>
+                <article
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-offset="0"
+                >
+                  <img
+                    src="./assets/tailwind.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Tailwind</h3>
+                    <!-- <p>Intermediate</p> -->
+                  </div>
+                </article>
+                <article
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-offset="0"
+                >
+                  <img
+                    src="./assets/java-script.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <!-- <p>Intermediate</p> -->
+                  </div>
+                </article>
+                <article
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-offset="0"
+                >
+                  <img
+                    src="./assets/react.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>ReactJs</h3>
+                    <!-- <p>Intermediate</p> -->
+                  </div>
+                </article>
+                <article
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-offset="0"
+                >
+                  <img
+                    src="./assets/mysql.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MySQL</h3>
+                    <!-- <p>Experienced</p> -->
+                  </div>
+                </article>
+                <article
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-offset="0"
+                >
+                  <img
+                    src="./assets/cpp.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C++</h3>
+                    <!-- <p>Intermediate</p> -->
+                  </div>
+                </article>
+                <article
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-offset="0"
+                >
+                  <img
+                    src="./assets/git.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <!-- <p>Intermediate</p> -->
+                  </div>
+                </article>
+                <article
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-offset="0"
+                >
+                  <img
+                    src="./assets/github.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Github</h3>
+                    <!-- <p>Intermediate</p> -->
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </div>
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects">
+      <div class="section">
+        <p
+          class="section__text__p1"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-offset="0"
+        >
+          Browse My Recent
+        </p>
+        <h1
+          class="title"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-offset="0"
+        >
+          Projects
+        </h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div
+              class="details-container color-container"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <div class="article-container">
+                <img
+                  src="./assets//weather.jpg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Weather App</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/Adarsh-Pawar/Weather_app')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('http://pawaradarsh.me/Weather_app/')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div
+              class="details-container color-container"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+            >
+              <div class="article-container">
+                <img
+                  src="./assets/timetable.jpg"
+                  alt="Project 2"
+                  class="project-img media"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">
+                Timetable Generator
+              </h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/Adarsh-Pawar/automated-timetable-generator')"
+                >
+                  Github
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick="">
+                  In progress
+                </button>
+              </div>
+            </div>
+            <div
+              class="details-container color-container"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="1000"
+            >
+              <div class="article-container">
+                <img
+                  src="./assets/tindog.png"
+                  alt="Project 3"
+                  class="project-img media"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Tindog</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/Adarsh-Pawar/tindog')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('http://pawaradarsh.me/tindog/')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+      <div class="section">
+        <p
+          class="section__text__p1"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          Get in Touch
+        </p>
+        <h1 class="title" data-aos="fade-up" data-aos-duration="2000">
+          Contact Me
+        </h1>
+        <div
+          class="contact-info-upper-container"
+          data-aos="flip-down"
+          data-aos-duration="2000"
+        >
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p>
+              <a href="mailto:pawaradarsh2277@gmail.com"
+                >pawaradarsh2277@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p>
+              <a
+                href="https://www.linkedin.com/in/adarsh-pawar-3039ab20b/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul
+            class="nav-links"
+            data-aos="zoom-out"
+            data-aos-duration="2000"
+            data-aos-offset="0"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <img
+            src="./assets/top.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#'"
+          />
+        </div>
+      </nav>
+      <p>Copyright &#169; <date id="date"></date> Adarsh Pawar</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
