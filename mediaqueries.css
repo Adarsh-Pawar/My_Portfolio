@@ -1,4 +1,4 @@
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
 
   #profile {
     height: 83vh;
@@ -22,7 +22,7 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media only screen and (max-width: 1290px) {
   #desktop-nav {
     display: none;
   }
@@ -107,7 +107,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
   
   .logo {
