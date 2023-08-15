@@ -1,8 +1,4 @@
-@media screen and (max-width: 1400px) and (min-width:1200px) {
-  
-  body {
-    overflow-x: hidden;
-  }
+@media (max-width: 1400px) {
 
   #profile {
     height: 83vh;
@@ -26,7 +22,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) and (min-width:600px) {
+@media (max-width: 1199px) {
   #desktop-nav {
     display: none;
   }
@@ -42,10 +38,10 @@
   
   .logo-img {
     position: absolute;
-    height: 75px;
-    width: 75px;
-    top: 70px;
-    left: 160px;
+    height: 60px;
+    width: 60px;
+    top: 30px;
+    left: 80px;
   }
 
   a:hover {
@@ -111,7 +107,7 @@
 
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
 
   
   .logo {
@@ -121,10 +117,10 @@
   
   .logo-img {
     position: absolute;
-    height: 50px;
-    width: 50px;
-    top: 80px;
-    left: 55px;
+    height: 45px;
+    width: 45px;
+    top: 35px;
+    left: 28px;
   }
 
 
@@ -135,7 +131,20 @@
 
   .section {
     display: flex;
+    margin: 0 10px;
+    height: 100vh;
   }
+  
+  .section >p {
+    margin-top: 25px;
+  }
+
+
+#profile .section {
+  height: 83vh;
+}
+
+
 
   #profile .section,
   .section-container {
@@ -143,13 +152,52 @@
     flex-direction: column;
     justify-content:start;
     align-items:center;
-    height: 83vh;
     margin: 0;
   }
 
-  section .section {
-    margin: 0 10px;
+
+  .section__pic-container {
+    width: auto;
+    margin: 0;
+    justify-content: center;
+    height: auto;
   }
+
+.section__pic-container img {
+  width: 250px;
+  height: 250px;
+}
+
+#about .section__pic-container {
+  margin-top: 25px;
+}
+
+
+#about .section {
+  margin: 10px;
+}
+
+#about {
+  height: 160vh;
+}
+
+#about .text-container {
+  margin: 5px 10px 0px 10px;
+}
+
+
+
+.degree {
+  margin-top: 15px;
+}
+
+
+
+.details-container {
+  margin: 0;
+}
+
+
 
   article {
     font-size: 1rem;
@@ -177,11 +225,8 @@
     gap: 0.5rem;
     text-align: center;
   }
-  .section__pic-container {
-    width: auto;
-    margin: 0;
-    justify-content: center;
-  }
+
+
   .section__text__p2 {
     font-size: 1.25rem;
   }
@@ -194,25 +239,31 @@
 
 
   #projects {
-    height: 185vh;
+    height: 270vh;
   }
 
   #projects .section {
     margin: 10px;
   }
 
+  #projects .experience-details-container{
+    width: 375px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+
   #projects .details-container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    flex-basis: 300px;
-    margin: 10px;
+    margin-top:10px ;
   }
 
   .media {
-    height: 465px;
-    width: 465px;
+    height: 298px;
+    width: 298px;
   }
 
   #contact {
