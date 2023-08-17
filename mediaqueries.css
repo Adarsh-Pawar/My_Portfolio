@@ -1,5 +1,10 @@
 @media only screen and (max-width: 1400px) {
 
+
+  body {
+    overflow-x: hidden;
+  }
+
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -109,6 +114,11 @@
 
 @media only screen and (max-width: 768px) {
 
+
+  
+  body {
+    overflow-x: hidden;
+  }
   
   .logo {
     font-size: 2rem;
