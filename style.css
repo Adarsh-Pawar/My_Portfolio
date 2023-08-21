@@ -366,11 +366,22 @@ a:hover {
 /* EXPERIENCE SECTION */
 
 #experience {
-  position: relative;
+  height: 100vh;
 }
 
 #experience .section {
-  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+#experience .details-container {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .experience-sub-title {
@@ -389,11 +400,11 @@ a:hover {
 
 .article-container {
   display: flex;
-  text-align: initial;
+  /* text-align: initial; */
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 article {
