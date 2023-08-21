@@ -112,6 +112,11 @@
 
 }
 
+
+
+/* MOBILE */
+
+
 @media only screen and (max-width: 768px) {
 
 
@@ -129,8 +134,8 @@
     position: absolute;
     height: 45px;
     width: 45px;
-    top: 35px;
-    left: 28px;
+    top: 55px;
+    left: 15px;
   }
 
 
@@ -149,9 +154,12 @@
     margin-top: 25px;
   }
 
+  #profile {
+    margin-bottom: 10px;
+  }
 
 #profile .section {
-  height: 83vh;
+  height: 80vh;
 }
 
 
@@ -182,13 +190,17 @@
   margin-top: 25px;
 }
 
+#about .about-containers {
+flex-direction: column;
+}
+
 
 #about .section {
   margin: 10px;
 }
 
 #about {
-  height: 160vh;
+  height: 150vh;
 }
 
 #about .text-container {
@@ -207,7 +219,10 @@
   margin: 0;
 }
 
-
+#experience {
+  margin-top: 0;
+  height: 120vh;
+}
 
   article {
     font-size: 1rem;
@@ -249,7 +264,7 @@
 
 
   #projects {
-    height: 270vh;
+    height: 210vh;
   }
 
   #projects .section {
@@ -277,7 +292,16 @@
   }
 
   #contact {
-    margin-top: 50px;
+    margin-top: 0px;
+    height: 70vh;
   }
 
+  .contact-info-upper-container {
+    flex-direction: column;
+  }
+
+
+  footer {
+    height: 25vh;
+  }
 }
