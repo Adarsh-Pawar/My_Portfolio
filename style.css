@@ -367,6 +367,7 @@ a:hover {
 
 #experience {
   height: 100vh;
+  position: relative;
 }
 
 #experience .section {
