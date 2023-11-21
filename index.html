@@ -19,7 +19,7 @@
       data-aos-offset="200"
     >
       <div>
-        <img src="assets/logo.png" alt="logo" class="logo-img" loading="eager"/>
+        <img src="assets/logo.png" alt="logo" class="logo-img" />
         <div class="logo">Adarsh Pawar</div>
       </div>
       <div>
@@ -35,8 +35,8 @@
     <!-- Hamburger -->
     <nav id="hamburger-nav">
       <div class="logo">
-        <img src="assets/logo.png" alt="logo" class="logo-img" loading="eager"/>
-        Adarsh Pawar
+        <img src="assets/logo.png" alt="logo" class="logo-img" />
+        <div class="logo-name">Adarsh Pawar</div>
       </div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
@@ -63,7 +63,39 @@
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
         >
-          <img src="assets/profile-com.png" alt="profile-pic" loading="eager"/>
+
+          <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" width="500" height="500">
+            <defs>
+              <clipPath id="a">
+                <path
+                  fill="currentColor"
+                  d="M853.5 605Q750 710 666.5 841.5T459 880q-124-93-268.5-154T73 509.5Q100 354 206.5 265T446 113.5q133-62.5 221 55T856 393q101 107-2.5 212Z"
+                />
+              </clipPath>
+            </defs>
+            <mask id="mask1" mask-type="alpha">
+              <path
+                fill="#22092C"
+                d="M853.5 605Q750 710 666.5 841.5T459 880q-124-93-268.5-154T73 509.5Q100 354 206.5 265T446 113.5q133-62.5 221 55T856 393q101 107-2.5 212Z"
+              />
+            </mask>
+            <g clip-path="url(#a)" mask="url(#mask1)">
+              <path
+                fill="#22092C"
+                d="M853.5 605Q750 710 666.5 841.5T459 880q-124-93-268.5-154T73 509.5Q100 354 206.5 265T446 113.5q133-62.5 221 55T856 393q101 107-2.5 212Z"
+              />
+              <image
+                href="assets/enhanced.png"
+                alt="profile-pic"
+                x="100"
+                y="165"
+                class="profile-pic"
+              />
+            </g>
+          </svg>
+          
+
+
         </div>
         <div
           class="section__text"
@@ -155,9 +187,7 @@
                   class="icon"
                 />
                 <h3>Experience</h3>
-                <p style="margin-top: 15px">
-                  1+ years <br />Frontend Development
-                </p>
+                <p style="margin-top: 15px">1+ years <br />Web Development</p>
               </div>
               <div
                 class="details-container"

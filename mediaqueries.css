@@ -1,31 +1,3 @@
-@media screen and (max-width: 1400px) {
-
-
-  body {
-    overflow-x: hidden;
-  }
-
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    font-size: 2rem;
-    display: inline-block;
-  }
-  
-  .logo-img {
-    position: absolute;
-    height: 75px;
-    width: 75px;
-    top: 65px;
-    left: 100px;
-  }
-}
 
 @media screen and (max-width: 1290px) {
   #desktop-nav {
@@ -35,134 +7,49 @@
     display: flex;
   }
 
-  
-  .logo {
-    font-size: 2rem;
-    display: inline-block;
-  }
-  
-  .logo-img {
-    position: absolute;
-    height: 60px;
-    width: 60px;
-    top: 30px;
-    left: 80px;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 0 2px 0 2px;
+    
   }
 
-  a:hover {
-    color: grey;
-  }
-
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-
-  #profile {
-    height: fit-content;
-  }
-
-  #profile .section,
-  .section-container {
+  #hamburger-nav {
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-    height: fit-content;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
   }
-  .arrow {
+
+  #desktop-nav {
     display: none;
   }
-  .section,
-  .section-container {
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-  }
-  section {
-    height: 90vh;
-  }
-  .section__pic-container img{
-    display: flex;
-    height: 400px;
-    width: 400px;
-  }
-  .about-containers {
-    margin-top: 0;
+
+  nav {
+    height: 12vh;
   }
 
-  .details-container{
-    margin-top:150px;
+  
+
+  section .section {
+    margin: 0px;
   }
 
-
-  #projects .section{
-    height: 100vh;
-    margin: 100px;
-  }
-
-  #projects .details-container{
-    width: 25%;
-    height: fit-content;
-  }
-
-  #contact {
-    height: fit-content;
-  }
-
+.logo {
+  display: flex;
+  align-items: center;
+  width: min-content;
 }
 
-
-
-/* MOBILE */
-
-
-@media screen and (max-width: 768px) {
-
-
-  
-  body {
-    overflow-x: hidden;
-  }
-  
-  .logo {
-    font-size: 2rem;
-    display: inline-block;
-    border: 2px solid black;
+  .logo-name {
+    display: none;
   }
   
   .logo-img {
-    position: absolute;
     height: 45px;
     width: 45px;
-    top: 55px;
-    left: 15px;
   }
-
-
-
-  section {
-    height: 100vh;
-  }
-
-  .section {
-    display: flex;
-    margin: 0 10px;
-    height: 100vh;
-  }
-  
-  .section >p {
-    margin-top: 25px;
-  }
-
-  #profile {
-    margin-bottom: 10px;
-  }
-
-#profile .section {
-  height: 80vh;
-}
-
 
 
   #profile .section,
@@ -172,138 +59,165 @@
     justify-content:start;
     align-items:center;
     margin: 0;
-    border: 2px solid black;
+    height: 88vh;
+    gap: 60px;
   }
 
-
-  .section__pic-container {
-    width: auto;
+  #profile .section__pic-container {
+    width: 250px;
     margin: 0;
     justify-content: center;
-    height: auto;
+    height: 250px;
   }
 
-.section__pic-container img {
-  width: 250px;
-  height: 250px;
-}
-
-#about .section__pic-container {
-  margin-top: 25px;
-}
-
-#about .about-containers {
-flex-direction: column;
-}
-
-
-#about .section {
-  margin: 10px;
-}
-
-#about {
-  height: 150vh;
-}
-
-#about .text-container {
-  margin: 5px 10px 0px 10px;
-}
-
-
-
-.degree {
-  margin-top: 15px;
-}
-
-
-
-.details-container {
-  margin: 0;
-}
-
-#experience {
-  margin-top: 0;
-  height: 120vh;
-}
-
-  article {
-    font-size: 1rem;
+  .profile-pic {
+    height: 850px;
+    width: 850px;
   }
-  /* footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  } */
-  .about-containers,
-  .btn-container {
-    flex-wrap: wrap;
+
+  #profile svg{
+    width: 250px;
+    height: 250px;
   }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: row;
-    gap: 0.5rem;
-    text-align: center;
+
+  #profile svg image {
+      transform: translate(-3%, 0%);
   }
 
 
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
   .title {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
-  .text-container {
-    text-align: justify;
+  
+  .section__text__p2 {
+    font-size: 1rem;
   }
 
-
-  #projects {
-    height: 210vh;
+  .btn {
+    padding: 0.5rem;
+    width: 7rem;
   }
+
+  #about .section__pic-container {
+    display: none;
+  }
+
+  
+  #about .about-containers {
+  flex-direction: column;
+  }
+  
+
+  #about .section {
+    /* height: max-content; */
+    height: 130vh;
+  }
+  
+  #about .text-container {
+    margin: 5px 10px 0px 10px;
+  }
+
+  #about .details-container {
+    padding: 20px 5px;
+  }
+
+  .details-container {
+    margin: 0 20px;
+  }
+
+  .arrow {
+    /* right: 1rem;
+    bottom: 1rem; */
+    display: none;
+  }
+  
+  #experience {
+    margin-top: 20px;
+    height: max-content;
+  }
+  
+  #experience .section {
+    margin: 0;
+    height: max-content;
+  }
+
+  #experience,
+  .about-containers {
+    flex-direction: column;
+  }
+
+  #experience article img {
+    height: 32px;
+    width: 32px;
+  }
+
+  #experience article {
+    display: flex;
+    width: min-content;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-details-container {
+    margin-top: 0px;
+    padding: 25px 2.5px;
+  }
+
 
   #projects .section {
-    margin: 10px;
+    height: max-content;
   }
 
-  #projects .experience-details-container{
-    width: 375px;
-    margin: auto;
-    margin-top: 50px;
+  .project-title {
+    font-size: 1.5rem;
   }
 
-
-  #projects .details-container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top:10px ;
+  #projects .details-container {
+    margin: 0px 20px;
+    padding: 20px 10px;
   }
 
-  .media {
-    height: 298px;
-    width: 298px;
+  #projects .arrow {
+    right: 0rem;
+    bottom: 0rem;
   }
 
   #contact {
-    margin-top: 0px;
-    height: 70vh;
+    margin: 0;
+    /* height: 78vh; */
   }
 
-  .contact-info-upper-container {
+  #contact .section {
+    padding: 0;
+  }
+
+  .contact-info-upper-container{
     flex-direction: column;
+    margin: 32px 10px;
+    padding: 5px;
   }
 
+  .contact-info-container {
+    font-size: 13px;
+    gap:5px;
+    margin: 5px;
+  }
 
   footer {
-    height: 25vh;
+    margin: 0px;
   }
+
+  footer .nav-links {
+    gap: 1rem;
+    font-size: 12px;
+  }
+
+  footer .arrow {
+    right: 10px;
+    bottom:10px;
+    width: 1rem;
+    height: 1rem;
+  }
+
 }
