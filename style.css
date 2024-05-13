@@ -10,7 +10,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  /* background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png"); */
   background-image: url("assets/back.png");
   overflow-x: hidden;
 }
@@ -198,10 +197,6 @@ a:hover {
 
 /* PROFILE SECTION */
 
-/* #profile {
-  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
-} */
-
 #profile .section {
   display: flex;
   justify-content: center;
@@ -322,9 +317,8 @@ a:hover {
 /* ABOUT SECTION */
 
 #about {
-  background-color: #f8f0e5;
-  /* background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png"); */
-  background-image: url("assets/back.png");
+  /* background-color: #f8f0e5; */
+  background: linear-gradient(rgba(214, 207, 197, 0.6),rgba(214, 207, 197, 0.6));
   position: relative;
 }
 
@@ -451,8 +445,8 @@ article .icon {
 
 #projects {
   position: relative;
-  background-color: #f8f0e5;
-  background-image: url("assets/back.png");
+  /* background-color: #f8f0e5; */
+  background: linear-gradient(rgba(214, 207, 197, 0.6),rgba(214, 207, 197, 0.6));
 }
 
 #projects .section {
@@ -553,4 +547,3 @@ footer .arrow {
   bottom: 30px;
   width: 2rem;
 }
-
